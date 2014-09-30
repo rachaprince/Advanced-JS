@@ -1,5 +1,9 @@
 console.log("javascript working!"); // Just to test. 
 $(document).ready(function() {
+  var MakeItalicsPink = function () {
+  $("body[font-style=italic]").css("font-color: #FF69B4");
+};
+MakeItalicsPink();
   $.get("http://www.reddit.com/hot.json", function(response) {
     // If you don't understand line 6, you may want to read up
     // on Javascript objects, in the slides or internet. 

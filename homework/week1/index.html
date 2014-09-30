@@ -3,11 +3,17 @@
   <!-- Make sure to include jQuery *before* your own Javascript -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="./script.js"></script>
+  <script> var makeItalicsPink = function () {
+	var italics = document.getElementbyId("em")
+	italics.style("font-color: #FF69B4");
+}; </script>
 </head>
 <body>
-  <h1>Top Reddit Stories:</h1>
+<p id= "em" style="font-style: italic;"> Testing <p>
+<button onclick="makeItalicsPink()">Pinkify</button>
+<!--   <h1>Top Reddit Stories:</h1> -->
   <!-- index.html -->
-<button id="refresh-button">Refresh</button>
-  <ul id="list"></ul>
+<!-- <button id="refresh-button">Refresh</button> -->
+<!--   <ul id="list"></ul> --> 
 </body>
 </html>

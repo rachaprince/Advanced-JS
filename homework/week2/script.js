@@ -2,13 +2,16 @@
 $(document).ready(function() {
   loadReddit();
   $("#refresh").click(function() {
-    // Ex. 1: Refresh Refresher code here
-    // Hint: it's one line. 
-    // ...
+    loadJSON();
   });
 
   $(window).mousemove(function(e) {
     // Ex. 3: My Shadow code here
+    $('#follow-dot').css({
+       left:  e.pageX,
+       top:   e.pageY
+    });
+});
 
     // You can change the css of an element with the .css function—
     //   look up the documentation for it on jQuery.com!
@@ -20,6 +23,24 @@ $(document).ready(function() {
   getFB(); // Defined below
 });
 
+
+
+var rachel = {
+  "fname" = "rachel"
+  "lname" = "prince"
+  "favoriteCereal" = "honey nut cheerios"
+  "interests" = ["caligraphy", "hiking", "running", "biking", "languages", "travel"]
+  var fullname = function() {
+    return this.fname + " " + this.lname;
+  };
+  var miniBio =  function() {
+   var toPrint = "My name is " + this.fullname(); 
+   toPrint += ". My favorite cereal is " this.favoriteCereal
+   toPrint += ". My intersts are " + this.interests.forEach( function(interest) {return interest + ", "); });
+    console.log(toPrint);
+    return toPrint;
+  };
+}
 // Ex. 2: Objectify Me code here
 // An example person
 // var rafi = {
